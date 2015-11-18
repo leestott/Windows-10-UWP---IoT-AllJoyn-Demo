@@ -1,0 +1,13 @@
+<node name="/com/taulty/lightbulb">
+  <interface name="com.taulty.lightbulb">
+    <method name="switch">
+      <arg name="on" type="b" direction="in"/>
+    </method>
+    <method name="getLocation">
+      <arg name="returnvalue" type="s" direction="out"/>
+    </method>
+    <method name="getStatus">
+      <arg name="returnvalue" type="b" direction="out"/>
+    </method>
+  </interface>
+</node>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>7372fe9b-6e73-46e4-ae89-5da7b15ef45f</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AllJoynHelpers.h" />
+    <ClInclude Include="..\IlightbulbService.h" />
+    <ClInclude Include="..\lightbulbConsumer.h" />
+    <ClInclude Include="..\lightbulbEventArgs.h" />
+    <ClInclude Include="..\lightbulbMethodResults.h" />
+    <ClInclude Include="..\lightbulbProducer.h" />
+    <ClInclude Include="..\lightbulbServiceEventAdapter.h" />
+    <ClInclude Include="..\lightbulbServiceEventArgs.h" />
+    <ClInclude Include="..\lightbulbSignals.h" />
+    <ClInclude Include="..\lightbulbStructures.h" />
+    <ClInclude Include="..\lightbulbWatcher.h" />
+    <ClInclude Include="..\pch.h" />
+    <ClInclude Include="..\TypeConversionHelpers.h" />
+    <ClInclude Include="..\AllJoynBusObjectManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AllJoynHelpers.cpp" />
+    <ClCompile Include="..\lightbulbConsumer.cpp" />
+    <ClCompile Include="..\lightbulbProducer.cpp" />
+    <ClCompile Include="..\lightbulbServiceEventAdapter.cpp" />
+    <ClCompile Include="..\lightbulbServiceEventArgs.cpp" />
+    <ClCompile Include="..\lightbulbSignals.cpp" />
+    <ClCompile Include="..\lightbulbWatcher.cpp" />
+    <ClCompile Include="..\pch.cpp" />
+    <ClCompile Include="..\TypeConversionHelpers.cpp" />
+    <ClCompile Include="..\AllJoynBusObjectManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\interface.xml" />
+  </ItemGroup>
+</Project>

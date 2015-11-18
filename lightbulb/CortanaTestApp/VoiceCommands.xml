@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <!-- NB: Not provided UK voice commands as, presently, my PC only
+      works with Cortana when I'm in UK mode
+      -->
+  <CommandSet xml:lang="en-us" Name="VoiceCommands">
+    <CommandPrefix>lightswitch</CommandPrefix>
+    <Example>show the lights</Example>
+
+    <Command Name="showLights">
+      <Example>show the lights</Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">show [the] lights</ListenFor>
+      <Feedback>Showing all the lights I can find...</Feedback>
+      <VoiceCommandService Target="VoiceCommandService"/>
+    </Command>
+
+    <Command Name="switchLight">
+      <Example>turn the bedroom lights on</Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">turn [the] {dictatedLocation} lights {onOffStatus}</ListenFor>
+      <Feedback>Just looking for that light for you...</Feedback>
+      <VoiceCommandService Target="VoiceCommandService"/>
+    </Command>
+
+    <PhraseList Label="onOffStatus">
+      <Item>On</Item>
+      <Item>Off</Item>
+    </PhraseList>
+    <PhraseTopic Label="dictatedLocation" Scenario="Natural Language">
+    </PhraseTopic>
+
+  </CommandSet>
+
+
+</VoiceCommands>

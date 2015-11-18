@@ -1,0 +1,51 @@
+﻿<UserControl
+    x:Class="LightbulbService.MainControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LightbulbService"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+  <Grid Margin="10">
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Viewbox>
+      <Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  Width="220.281"
+                  Height="320.3066"
+                  Canvas.Left="0"
+                  Canvas.Top="0">
+        <Path Width="220.281"
+              x:Name="bulb"
+                  Fill="White"
+                  Height="255.208"
+                  Canvas.Left="0"
+                  Canvas.Top="0"
+                  Stretch="Fill"
+                  StrokeThickness="13.4319"
+                  StrokeMiterLimit="2.75"
+                  Stroke="#FF000000"
+                  Data="F1 M 206.849,103.428C 206.849,46.3386 160.511,0 103.428,0C 46.3386,0 -2.03451e-005,46.3386 -2.03451e-005,103.428C -2.03451e-005,147.079 28.2093,165.215 51.7147,199.464C 57.756,208.193 65.8186,241.776 65.8186,241.776L 141.709,241.776C 141.709,241.776 149.767,208.193 155.808,199.464C 177.975,165.215 206.849,147.079 206.849,103.428 Z " />
+        <Path Width="98.0519"
+                  Height="59.0986"
+                  Canvas.Left="60.3987"
+                  Canvas.Top="262.551"
+                  Stretch="Fill"
+                  StrokeThickness="13.4319"
+                  StrokeMiterLimit="2.75"
+                  Stroke="#FF000000"
+                  Data="M 61.1146,263.267L 145.735,263.267M 64.4746,285.428L 142.381,285.428M 126.933,285.428C 126.933,298.188 116.188,308.933 103.428,308.933C 90.6666,308.933 79.9226,298.188 79.9226,285.428" />
+      </Canvas>
+    </Viewbox>
+    <StackPanel Grid.Row="1" HorizontalAlignment="Stretch">
+      <TextBox x:Name="txtRoom" Header="Light Location" Text="kitchen"/>
+      <Button x:Name="btnAdvertise" Click="OnAdvertise" Margin="10" HorizontalAlignment="Center">Advertise on AllJoyn Network</Button>
+    </StackPanel>
+  </Grid>
+</UserControl>
